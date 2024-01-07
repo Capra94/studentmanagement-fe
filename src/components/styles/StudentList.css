@@ -1,0 +1,226 @@
+.student-list-container {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.student-list {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.student-list-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.student-item {
+  width: 50%; 
+  max-width: 400px; 
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+
+.student-item > * {
+  margin-bottom: 10px; 
+}
+
+.student-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.student-item .info {
+  flex: 1;
+}
+
+.student-item h3 {
+  margin: 0;
+}
+
+.student-item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  
+}
+
+.student-item button {
+  padding: 8px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+:root {
+  --text-color: #333; 
+}
+
+
+
+.student-info p {
+  margin: 12px 0; 
+  font-size: 14px;
+  line-height: 1.5; 
+  color: var(--text-color, #333); 
+  
+}
+
+.student-info-name {
+  text-align: center;
+  border-bottom-style: solid;
+  font-weight: bolder;
+}
+
+.edit-student-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.edit-student-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-student-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  position: fixed;
+  bottom: 40%;
+  left: 13%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.add-student-form h2 {
+  text-align: center;
+}
+
+.add-student-form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.add-student-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-student-form button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-student-form button:hover {
+  background-color: #2489cc;
+}
+
+.add-student-container {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.update-button,
+.add-button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.update-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button {
+  
+  background-color: rgb(255, 0, 21);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.update-button {
+  background-color: #3498db;
+}
+
+.delete-button:hover {
+  background-color: rgb(239, 0, 0); 
+}
+
+.update-button:hover {
+  background-color: #2489cc; 
+}
+
+
+.add-button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #3498db;
+}

@@ -1,0 +1,121 @@
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+
+
+.addClassroom-wrapper {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  gap: 50px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+}
+.enrollment-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.addClassroom-wrapper:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+  text-align: center;
+
+}
+
+.form-section,
+.list-section {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input,
+button,
+select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+.deleteButton {
+  background-color: red;
+  font-weight: normal;
+}
+
+.deleteButton:hover {
+  background-color: rgb(239, 0, 0);
+}
+
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2489cc;
+}
+
+/* Classroom List Styles */
+.classroom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.classroom-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.classroom-list-item:hover {
+  background-color: #f9f9f9;
+}
+
+
+.student-classroom,
+h2 p,
+.create-classroom,
+.studentClassroomWrapper {
+  text-align: center;
+}
+
+.studentClassroomContainer {
+  padding-top: 51px;
+}
+
+
+.input-container input,
+.input-container button {
+  margin: 0;
+}
+
